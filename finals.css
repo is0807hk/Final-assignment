@@ -11,3 +11,6 @@ a:hover {
   color: green;
 }
 
+.buttons b:hover{
+  background-color: #d0d0d0;
+}
