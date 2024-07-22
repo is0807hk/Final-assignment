@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="finals.css">
+  <script>
+    let i = 0;
+    function checkAnswerQOne(){
+      if(document.getElementById("crad_2").checked){
+        i += 20;
+      }
+    }
+
+    function checkAnswerQTwo(){
+      if(document.getElementById("srad_1").checked){
+        i += 20;
+      }
+    }
+
+    function checkAnswerQThree(){
+      if(document.getElementById("prad_4").checked){
+        i += 20;
+      }
+    }
+
+    function checkAnswerQFour(){
+      if(document.getElementById("lrad_1").checked){
+        i += 20;
+      }
+    }
+
+    function checkAnswerQFive(){
+      if(document.getElementById("arad_2").checked){
+        i += 20;
+      }
+    }
+
+    function showAnswer(){
+      var name = document.multipleChoice.displayResult.value;
+      alert("Hello" + name + "! Your score is " + i);
+      i = 0;
+    }
+
+    function submitButton(){
+      event.preventDefault();
+      checkAnswerQOne();
+      checkAnswerQTwo();
+      checkAnswerQThree();
+      checkAnswerQFour();
+      checkAnswerQFive();
+      showAnswer();
+    }
+
+  </script>
+</head>
+<body>
+  <h1> Final Assignment </h1>
+  <table border="1">
+    <tr>
+      <td colspan="3" width="400" height="50" bgcolor="#BDEBF3" align="center">
+         <p><a HREF="/">Home</a> | <a HREF="/portfolio">Portfolio</a> | <a HREF="/game">Game</a></p>
+      </td>
+    </tr>
+  </table>
+
+  <h2> Multiple choice game! Each question will be worth 20 points! </h2>
+    <br>
+    <p>Input your name here:</p>
+  <form name = multipleChoice>
+    <textarea name = "displayResult" row = 1 cols = 16> </textarea>
+    <br> <br>
+    Q1: What is the capital of Canada? <br> <br>
+<input type="radio" name="capital" id ="crad_1" value="Toronto">Toronto
+<input type="radio" name="capital" id ="crad_2" value="Ottawa">Ottawa
+<input type="radio" name="capital" id ="crad_3" value="Vancouver">Vancouver
+<input type="radio" name="capital" id ="crad_4" value="Montreal">Montreal <br> <br>
+    Q2: Which country has won a soccer World Cup? <br> <br>
+<input type="radio" name="country" id ="srad_1" value="Uruguay">Uruguay
+<input type="radio" name="country" id ="srad_2" value="Netherlands">Netherlands
+<input type="radio" name="country" id ="srad_3" value="Portugal">Portugal
+<input type="radio" name="country" id ="srad_4" value="Paraguay">Paraguay<br> <br>
+    Q3: Which country here has the largest population? <br> <br>
+<input type="radio" name="population" id ="prad_1" value="Japan">Japan
+<input type="radio" name="population" id ="prad_2" value="Philippines">Philippines
+<input type="radio" name="population" id ="prad_3" value="Ethiopia">Ethiopia
+<input type="radio" name="population" id ="prad_4" value="Mexico">Mexico <br> <br>
+    Q4: Which city has the largest population here? <br> <br>
+<input type="radio" name="japan_city" id ="lrad_1" value="Yokohana">Yokohama
+<input type="radio" name="japan_city" id ="lrad_2" value="Fukuoka">Fukuoka
+<input type="radio" name="japan_city" id ="lrad_3" value="Osaka">Osaka
+<input type="radio" name="japan_city" id ="lrad_4" value="Nagoya">Nagoya <br> <br>
+    Q5: Which country has the largest land area here? <br> <br>
+<input type="radio" name="land_area" id ="arad_1" value="Kazakhstan">Kazakhstan
+<input type="radio" name="land_area" id ="arad_2" value="Argentina">Argentina
+<input type="radio" name="land_area" id ="arad_3" value="Indonesia">Indonesia
+<input type="radio" name="land_area" id ="arad_4" value="Saudi Arabia">Saudi Arabia <br> <br>
+
+<input type="submit" name="submit_results" value=Submit onclick="submitButton()">
+</form>
+
+</body>
+</html>
