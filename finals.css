@@ -1,3 +1,8 @@
+* {
+ font-size: 100%;
+ font-family: Copperplate;
+}
+
 a:link {
   color: blue;
   text-decoration: none;
