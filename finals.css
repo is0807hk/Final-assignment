@@ -7,6 +7,10 @@
   margin-right: auto;
 }
 
+body{
+    background-image: url('https://api.wallpapers.ai/static/downloads/529e5c7d45ca4f88b09e6c6645e3b725/upscaled/000000_158695417_kdpmpp2m15_PS7.5_mac_os_sonoma_wallpaper,_material_design,_colorful,_simple._digital_art_concept_art_%5Bupscaled%5D.jpg');
+}
+
 a:link {
   color: blue;
   text-decoration: none;
