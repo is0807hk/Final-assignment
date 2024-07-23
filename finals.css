@@ -2,9 +2,10 @@
  font-family: Copperplate;
 }
 
-mainTable { 
-     margin: 0 auto; 
-   } 
+.mainTable {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 a:link {
   color: blue;
